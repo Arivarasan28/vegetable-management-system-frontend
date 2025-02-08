@@ -71,7 +71,7 @@ const AuthPopups = ({ isOpen, setIsAuthPopupsOpen, popupType, setPopupType }) =>
                   placeholder="Password"
                 />
               </div>
-              <button type="submit" className="w-full bg-customOr1 text-white py-2 rounded-lg shadow-md hover:bg-customBlue1">
+              <button type="submit" className="w-full bg-green-500 text-white py-2 rounded-lg shadow-md hover:bg-customBlue1">
                 Create Account
               </button>
             </form>
@@ -108,7 +108,7 @@ const AuthPopups = ({ isOpen, setIsAuthPopupsOpen, popupType, setPopupType }) =>
                   placeholder="Password"
                 />
               </div>
-              <button type="submit" className="w-full bg-customOr1 text-white py-2 rounded-lg shadow-md hover:bg-customBlue1">
+              <button type="submit" className="w-full bg-green-500 text-white py-2 rounded-lg shadow-md hover:bg-customBlue1">
                 Login
               </button>
             </form>

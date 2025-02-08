@@ -61,7 +61,7 @@ function App() {
 
   return (
     <Router>
-      <div className="h-full bg-theme-bg bg-cover bg-center">
+      <div className="h-full bg-black bg-theme-bg bg-cover bg-center">
         {userRole !== "admin" && <Navbar setIsAuthPopupsOpen={setIsAuthPopupsOpen} />}
 
         <Routes>

@@ -3,7 +3,9 @@ import Footer from "../components/Footer"; // Assuming Footer is another compone
 
 const OurBusiness = () => {
   return (
-    <div className="font-sans text-gray-400 pt-[100px]">
+    <section
+        id="our-business" 
+        className="font-sans text-gray-400 pt-[100px]">
       {/* Hero Section
       <header className="text-center py-12 bg-gray-800 text-white">
         <h1 className="text-4xl font-bold mb-4">Welcome to Our Food Truck</h1>
@@ -70,7 +72,7 @@ const OurBusiness = () => {
 
       {/* Footer Section */}
       {/* <Footer /> */}
-    </div>
+    </section>
   );
 };
 
