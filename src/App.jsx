@@ -6,6 +6,13 @@ import Footer from "./components/Footer";
 import OurMenu from "./pages/OurMenu";
 import AuthPopups from "./popups/AuthPopups";
 import LandingPage from "./pages/LandingPage";
+import Contact from "./pages/Contact";
+import OurBusiness from "./pages/OurBusiness";
+import AdminSidebar from "./components/AdminSidebar";
+import AdminDashboard from "./pages/adminpages/AdminDashboard";
+import MenuManagement from "./pages/adminpages/MenuManagement";
+import AdminOrders from "./pages/adminpages/AdminOrders";
+import AdminProtectedRoutes from "./util/AdminProtectedRoutes";
 
 
 function App() {
@@ -24,33 +31,33 @@ function App() {
       <section id="our-menu" className="w-full">
         <OurMenu />
       </section>
-      {/* <section id="our-business" className="w-full">
+      <section id="our-business" className="w-full">
         <OurBusiness />
       </section>
-      <section id="reviews" className="w-full">
+      {/* <section id="reviews" className="w-full">
         <Reviews />
-      </section>
+      </section> */}
       <section id="contact" className="w-full">
         <Contact />
-      </section> */}
+      </section>
     </main>
   );
 
-  // const AdminLayout = () => (
-  //   <div className="flex h-screen">
-  //     {/* Sidebar */}
-  //     <AdminSidebar setIsAuthPopupsOpen={setIsAuthPopupsOpen} />
+  const AdminLayout = () => (
+    <div className="flex h-screen">
+      {/* Sidebar */}
+      <AdminSidebar setIsAuthPopupsOpen={setIsAuthPopupsOpen} />
 
-  //     {/* Main Content */}
-  //     <div className="flex-1 p-4 bg-black overflow-auto">
-  //       <Routes>
-  //         <Route path="dashboard" element={<AdminDashboard />} />
-  //         <Route path="menu" element={<MenuManagement />} />
-  //         <Route path="orders" element={<AdminOrders />} />
-  //       </Routes>
-  //     </div>
-  //   </div>
-  // );
+      {/* Main Content */}
+      <div className="flex-1 p-4 bg-black overflow-auto">
+        <Routes>
+          <Route path="dashboard" element={<AdminDashboard />} />
+          <Route path="menu" element={<MenuManagement />} />
+          <Route path="orders" element={<AdminOrders />} />
+        </Routes>
+      </div>
+    </div>
+  );
 
   return (
     <Router>
@@ -63,14 +70,14 @@ function App() {
 
           {/* Multi-Page Routes */}
           <Route path="/our-menu" element={<OurMenu />} />
-          {/* <Route path="/reviews" element={<Reviews />} />
+          
           <Route path="/contact" element={<Contact />} />
-          <Route path="/our-business" element={<OurBusiness />} /> */}
+          <Route path="/our-business" element={<OurBusiness />} />
 
           {/* Admin Protected Routes */}
-          {/* <Route path="/admin/*" element={<AdminProtectedRoutes />}>
+          <Route path="/admin/*" element={<AdminProtectedRoutes />}>
             <Route path="*" element={<AdminLayout />} />
-          </Route> */}
+          </Route>
 
           {/* Waiter Protected Routes */}
           {/* <Route path="/waiter/*" element={<WaiterProtectedRoutes />}>
