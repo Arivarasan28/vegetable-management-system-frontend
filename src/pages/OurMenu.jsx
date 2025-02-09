@@ -439,7 +439,7 @@ const OurMenu = () => {
           className="fixed bottom-12 right-12 px-4 py-2 bg-green-700 text-black rounded-full font-medium shadow-md z-30 flex items-center justify-center"
         >
           <img
-            src="/icons/heart.png"
+            src="/heart.png"
             alt="Favorites"
             className="w-10 h-10 mr-2"
           />
