@@ -8,9 +8,9 @@ const Footer = () => {
           <h3 className="text-lg font-bold mb-4">Our Products</h3>
           <ul className="space-y-2 text-sm">
             <li>Our menus</li>
-            <li>Our burgers</li>
+            <li>Contact Us</li>
             <li>Our times sides</li>
-            <li>Our naandwiches</li>
+            <li>Our Stores</li>
           </ul>
         </div>
         <div>
