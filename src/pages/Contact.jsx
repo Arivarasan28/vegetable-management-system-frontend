@@ -7,19 +7,6 @@ const Contact = () => {
       id="contact"
       className="min-h-screen bg-black text-white font-sans px-4 py-10"
     >
-      {/* <div className="text-center">
-        <h2 className="text-3xl font-bold mb-4">For more Support</h2>
-        <div className="flex justify-center items-center gap-2">
-          <input
-            type="email"
-            placeholder="Enter Email"
-            className="px-4 py-2 rounded-lg text-black outline-none"
-          />
-          <button className="px-6 py-2 bg-white text-black font-semibold rounded-lg hover:bg-gray-200">
-            Subscribe
-          </button>
-        </div>
-      </div> */}
 
       <div className="mt-20 flex flex-col md:flex-row justify-between items-center">
         <div className="md:w-1/2 text-center md:text-left mb-10 md:mb-0">

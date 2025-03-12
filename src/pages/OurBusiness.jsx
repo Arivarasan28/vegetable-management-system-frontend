@@ -6,13 +6,7 @@ const OurBusiness = () => {
     <section
         id="our-business" 
         className="font-sans text-gray-400 pt-[100px]">
-      {/* Hero Section
-      <header className="text-center py-12 bg-gray-800 text-white">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Our Food Truck</h1>
-        <p className="text-xl mb-6">
-          Serving Fresh, Delicious, and Affordable Meals on the Go!
-        </p>
-      </header> */}
+      
 
       {/* About Section */}
       <section className="bg-black py-8 px-4 text-center">
@@ -44,34 +38,13 @@ const OurBusiness = () => {
         </div>
       </section>
 
-      {/* Gallery Section */}
-      {/* <section className="bg-black py-8 px-4">
-        <h2 className="text-3xl text-orange-600 text-center mb-8">Our Gallery</h2>
-        <div className="flex flex-wrap justify-center gap-6">
-          <img
-            src="/public/trucks/truck2.jpg"
-            alt="Food Truck"
-            className="w-full sm:w-72 max-w-xs rounded-lg shadow-lg"
-          />
-          <img
-            src="/public/trucks/truck1.jpg"
-            alt="Delicious Dish"
-            className="w-full sm:w-72 max-w-xs rounded-lg shadow-lg"
-          />
-          <img
-            src="/public/trucks/truck3.jpg"
-            alt="Tasty Meal"
-            className="w-full sm:w-72 max-w-xs rounded-lg shadow-lg"
-          />
-        </div>
-      </section> */}
+      
 
       <section className=" bg-black py-8">
 
       </section>
 
-      {/* Footer Section */}
-      {/* <Footer /> */}
+      
     </section>
   );
 };
