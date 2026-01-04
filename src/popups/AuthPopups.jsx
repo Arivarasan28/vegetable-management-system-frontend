@@ -16,9 +16,9 @@ const AuthPopups = ({ isOpen, setIsAuthPopupsOpen, popupType, setPopupType }) =>
     if (email === 'admin@gmail.com' && password === 'admin123') {
       role = 'admin';
       navigate("/admin/dashboard");
-    } else if (email === 'waiter@gmail.com' && password === 'waiter123') {
-      role = 'waiter';
-      navigate('/our-menu');
+    // } else if (email === 'waiter@gmail.com' && password === 'waiter123') {
+    //   role = 'waiter';
+    //   navigate('/our-menu');
     } else if (email === 'customer@gmail.com' && password === 'customer123') {
       role = 'customer';
     }

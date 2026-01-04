@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 
 const Navbar = ({ setIsAuthPopupsOpen }) => {
@@ -8,6 +7,11 @@ const Navbar = ({ setIsAuthPopupsOpen }) => {
   // Function to handle link clicks
   const handleLinkClick = (link) => {
     setActiveLink(link); // Update the active link state
+  };
+
+  const handleLogout = () => {
+    localStorage.clear();
+    window.location.reload();
   };
 
   return (
@@ -76,12 +80,21 @@ const Navbar = ({ setIsAuthPopupsOpen }) => {
           </>
         )}
 
-        <button
-          onClick={() => setIsAuthPopupsOpen(true)}
-          className="bg-green-500 text-white p-2 rounded-md hover:bg-green-700 transition-colors"
-        >
-          Login
-        </button>
+        {userRole ? (
+          <button
+            onClick={handleLogout}
+            className="bg-red-500 text-white p-2 rounded-md hover:bg-red-700 transition-colors"
+          >
+            Logout
+          </button>
+        ) : (
+          <button
+            onClick={() => setIsAuthPopupsOpen(true)}
+            className="bg-green-500 text-white p-2 rounded-md hover:bg-green-700 transition-colors"
+          >
+            Login
+          </button>
+        )}
       </div>
     </nav>
   );
